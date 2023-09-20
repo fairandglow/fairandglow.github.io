@@ -288,7 +288,9 @@
 
 
   </section>
- <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+  <!-- ====== Contact Section Start -->
+
+               <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
       <h3 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
         Contact Us
       </h3>
@@ -352,10 +354,10 @@
           <form action="https://formspree.io/f/xqkvyblz" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <!-- Name Field -->
             <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="name" >Name</label>
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name" type="text" placeholder="Your Name">
+                id="name" type="text" placeholder="Your Name" name="name">
             </div>
 
             <!-- Email Field -->
@@ -363,7 +365,7 @@
               <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email" type="email" placeholder="Your Email">
+                id="email" type="email" placeholder="Your Email"  name="_replyto">
             </div>
 
             <!-- Phone Field -->
@@ -371,7 +373,7 @@
               <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="phone" type="tel" placeholder="Your Phone Number">
+                id="phone" type="tel" placeholder="Your Phone Number"  name="telephone">
             </div>
 
             <!-- Message Field -->
@@ -379,7 +381,7 @@
               <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
               <textarea
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="message" placeholder="Your Message"></textarea>
+                id="message" placeholder="Your Message" name ="complaint"></textarea>
             </div>
 
             <!-- Submit Button -->
@@ -395,8 +397,7 @@
           </form>
         </div>
       </div>
-    </section>
-  <!-- component -->
+    </section> <!-- component -->
   <script>
     const menuIcon = document.getElementById("menu-icon");
     const mobileMenu = document.getElementById("mobile-menu");
