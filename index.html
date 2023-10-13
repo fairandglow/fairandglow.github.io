@@ -30,7 +30,7 @@
       <div
         class="hidden space-x-5 font-bold md:flex text-gray-900 mr-4 transition duration-500 {{ scroll ? 'navbar-scroll' : '' }}">
         <!-- Links with animated underline on hover -->
-        <a href="#" class="group inline-block relative">
+        <a href="index.html" class="group inline-block relative">
           <span class="font-bold">Home</span>
           <span
             class="absolute bottom-0 left-0 w-full h-0.5 bg-[#e200dc] transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
@@ -40,17 +40,17 @@
           <span
             class="absolute bottom-0 left-0 w-full h-0.5 bg-[#e200dc] transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
         </a>
-        <a href="#" class="group inline-block relative">
+        <a href="#service" class="group inline-block relative">
           <span class="font-bold">Service</span>
           <span
             class="absolute bottom-0 left-0 w-full h-0.5 bg-[#e200dc] transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
         </a>
-        <a href="#" class="group inline-block relative">
+        <a href="#gallery" class="group inline-block relative">
           <span class="font-bold">Gallery</span>
           <span
             class="absolute bottom-0 left-0 w-full h-0.5 bg-[#e200dc] transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
         </a>
-        <a href="#" class="group inline-block relative">
+        <a href="#condact" class="group inline-block relative">
           <span class="font-bold">Contact</span>
           <span
             class="absolute bottom-0 left-0 w-full h-0.5 bg-[#e200dc] transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
@@ -65,11 +65,11 @@
     class="fixed top-0 left-0 h-full w-full bg-[#030a1a]/90 backdrop-blur backdrop-opacity-90 hidden md:hidden z-50">
     <div class="flex flex-col h-full justify-center items-center">
       <!-- Mobile navigation links -->
-      <a href="#" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Home</a>
-      <a href="#" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">About Us</a>
-      <a href="#" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Service</a>
-      <a href="#" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Gallery</a>
-      <a href="#" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Contact Us</a>
+      <a href="./index.html" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Home</a>
+      <a href="#about" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">About Us</a>
+      <a href="#service" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Service</a>
+      <a href="#gallery" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Gallery</a>
+      <a href="#condact" class="font-bold text-white hover:text-[#e200dc] py-3 transition-colors duration-200">Contact Us</a>
 
       <!-- Other mobile navigation links -->
       <button id="close-menu"
@@ -119,7 +119,7 @@
   <!-- Hero section ends -->
   <!-- body part -->
   <!-- about -->
-  <section id="about" class="mt-6 p-2 grid lg:flex gap-2 items-center justify-center text-gray-700">
+  <section id="about" class="mt-6 p-2 grid lg:flex gap-2 items-center justify-center text-gray-700  md:pt-4 sm:pt-4">
     <div class="pb-10 lg:p-12 lg:h-96 shadow-lg w-full lg:w-1/2 h-auto bg-white rounded-lg">
       <h3 class="font-bold text-3xl text-center mb-4 ">
         About
@@ -150,7 +150,7 @@
       </button> -->
     </div>
     <div
-      class="relative group bg-[url('./images/joycy.jpg')] bg-cover bg-center w-full lg:w-1/2 h-72 lg:h-96 hover:-translate-y-4 delay-75 transition rounded-lg">
+      class="relative group bg-[url('./images/joycy.jpg')] bg-cover bg-center w-full lg:w-1/2 h-72 lg:h-96 hover:-translate-y-4 delay-75 transition rounded-lg  md:pt-6 sm:pt-6">
       <div
         class="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-40 transition-opacity rounded-lg">
         <p class="text-white font-bold text-lg">Our Founder Founder-name</p>
@@ -163,7 +163,7 @@
   <section id="service" class="min-h-screen p-2 text-gray-700">
 
     <!-- cards are here  -->
-    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5 ">
       <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Services</h2>
       <p class="mb-12 text-lg text-gray-500">"Here is a few of the awesome Services we provide."</p>
       <div class="w-full">
@@ -270,7 +270,7 @@
     <!-- source:https://tailwind.besoeasy.com -->
   </section>
   <!-- Gallery-section  -->
-  <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+  <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5" id="gallery">
 
     <h3 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
       Gallery
@@ -288,15 +288,17 @@
 
 
   </section>
-  <!-- ====== Contact Section Start -->
 
-               <section class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+               
+               <!-- ====== Contact Section Start -->
+
+               <section id="contact" class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
       <h3 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
         Contact Us
       </h3>
       <div class="flex flex-wrap">
         <div class="w-full lg:w-1/2">
-          <div class="pb-10 lg:p-12 lg:h-96 shadow-lg w-full h-auto bg-white rounded-lg">
+          <div class="pb-10 lg:p-12 lg:h-96 shadow-lg w-full h-auto bg-white rounded-lg  md:pt-4 sm:pt-4">
             <h4 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900 underline decoration-pink-600">Get in
               touch us.</h4>
             <p class="text-pink-600 pt-4"> Unlock the beauty within you. Our skilled and passionate team is here to
@@ -350,10 +352,10 @@
             </div>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 lg:pl-12">
+        <div class="w-full lg:w-1/2 lg:pl-12 md:pt-4 sm:pt-4 " >
           <form action="https://formspree.io/f/xqkvyblz" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <!-- Name Field -->
-            <div class="mb-4">
+            <div class="mb-4" >
               <label class="block text-gray-700 text-sm font-bold mb-2" for="name" >Name</label>
               <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -397,7 +399,20 @@
           </form>
         </div>
       </div>
-    </section> <!-- component -->
+      <div 
+      class="w-full xl:pt-4 lg:pt-4 md:pt-4 sm:pt-4">
+      <div class="relative w-full h-96">
+        <iframe class="absolute top-0 left-0 w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+    </div>
+    </div>
+     
+    </section>
+     
+  
+  <!-- component -->
   <script>
     const menuIcon = document.getElementById("menu-icon");
     const mobileMenu = document.getElementById("mobile-menu");
